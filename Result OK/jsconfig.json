@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "strict": true,
+        "target": "ES6",
+        "moduleResolution": "Node"
+    },
+    "include": ["*.js"],
+    "exclude": ["assets"]
+}
