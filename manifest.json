@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Evidencias SQA",
+  "version": "2.0",
+  "description": "Evidencias SQA v2.0 — Motor de alto rendimiento con OffscreenCanvas y WebP.",
+  "icons": {
+    "16": "SQA.png",
+    "48": "SQA.png",
+    "128": "SQA.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "clipboardWrite",
+    "storage",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Capturar Evidencias SQA",
+    "default_icon": "SQA.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "SQA.png",
+        "result.html",
+        "result.js",
+        "jszip.min.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
